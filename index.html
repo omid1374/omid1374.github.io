@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>سیاست حفظ حریم خصوصی و امنیت (Privacy Policy) - Sheaf</title>
+    <title>Privacy & Security Policy - Sheaf</title>
     <style>
         body {
             font-family: 'Tahoma', 'Vazirmatn', sans-serif;
@@ -31,12 +31,15 @@
             color: #333;
             margin-top: 20px;
         }
+        /* کلاس اصلی برای تمام بخش‌های زبان */
         .lang-section {
             padding: 20px;
             margin-top: 30px;
             border: 1px solid #ddd;
             border-radius: 8px;
             background-color: #fff;
+            /* به صورت پیش‌فرض همه پنهان هستند، فقط انگلیسی با JS نشان داده می‌شود */
+            display: none; 
         }
         .rtl {
             direction: rtl;
@@ -65,35 +68,45 @@
             border-left: 3px solid #FF0000;
             margin-top: 15px;
         }
+        #language-selector-container {
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #eef;
+            border-radius: 5px;
+        }
+        #language-selector {
+            padding: 10px 15px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #aaa;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
 
-    <h1>سیاست حفظ حریم خصوصی و امنیت (Privacy & Security Policy) - Sheaf</h1>
-    <p style="text-align: center; color: #777;">تاریخ آخرین به‌روزرسانی: اکتبر ۲۰۲۵</p>
-
-    <div class="lang-section rtl">
-        <h2>فارسی (Persian)</h2>
-        
-        <p>ما به حفظ حریم خصوصی کاربران خود متعهد هستیم. این سند نحوه جمع‌آوری، استفاده و حفاظت از اطلاعات شما توسط اپلیکیشن **Sheaf** را توضیح می‌دهد.</p>
-
-        <h3>۱. جمع‌آوری اطلاعات شخصی</h3>
-        <p>اپلیکیشن **Sheaf** **هیچ اطلاعات شخصی قابل شناسایی (PII)** از جمله نام، آدرس ایمیل، یا موقعیت جغرافیایی شما را به صورت مستقیم جمع‌آوری، ذخیره یا به سرورهای خارجی ارسال نمی‌کند. ما ممکن است از سرویس‌های شخص ثالث برای جمع‌آوری داده‌های استفاده ناشناس (مانند نوع دستگاه و گزارش‌های خطا) برای بهبود عملکرد استفاده کنیم.</p>
-        
-        <h3>۲. مدیریت و امنیت فایل‌ها (بسیار مهم)</h3>
-        <ul>
-            <li>**پردازش محلی:** بخش اعظم عملیات‌ها (مانند تغییر سایز PDF و تصاویر) **کاملاً به صورت محلی** روی دستگاه شما انجام می‌شود.</li>
-            <li>**حذف فایل‌های سرور:** فایل‌های ارسال‌شده به سرور (برای ابزارهای نیازمند پردازش سرور)، **بلافاصله پس از تکمیل فرآیند پردازش و ارسال نتیجه به کاربر، از سرورهای ما حذف می‌شوند.** ما هیچ نسخه‌ای از فایل‌های شما را ذخیره نمی‌کنیم.</li>
-        </ul>
-
-        <h3>۳. سلب مسئولیت تبلیغات</h3>
-        <p class="disclaimer">اپلیکیشن **Sheaf** ممکن است تبلیغات شخص ثالثی را نمایش دهد. این تبلیغات توسط پلتفرم‌های تبلیغاتی ارائه می‌شوند. ما هیچ مسئولیتی در قبال محتوا، عملکرد یا اقدامات لینک‌های خارجی و وب‌سایت‌های مرتبط با این تبلیغات نداریم. کلیک بر روی تبلیغات با مسئولیت خود کاربر است.</p>
-        
-        <h3>۴. تماس با ما</h3>
-        <p>در صورت داشتن هرگونه سؤال، لطفاً از طریق ایمیل **www.mom1374@gmail.com** با ما تماس بگیرید.</p>
+    <div id="language-selector-container">
+        <label for="language-selector" style="font-weight: bold;">Select Language / زبان را انتخاب کنید:</label>
+        <select id="language-selector" onchange="showLanguage(this.value)">
+            <option value="en">English (Default)</option>
+            <option value="fa">فارسی (Persian)</option>
+            <option value="fr">Français (French)</option>
+            <option value="ar">العربية (Arabic)</option>
+            <option value="de">Deutsch (German)</option>
+            <option value="ru">Русский (Russian)</option>
+            <option value="zh">中文 (Chinese)</option>
+            <option value="ja">日本語 (Japanese)</option>
+            <option value="ko">한국어 (Korean)</option>
+            <option value="hi">हिन्दी (Hindi)</option>
+        </select>
     </div>
 
-    <div class="lang-section ltr">
+    <h1>Privacy & Security Policy - Sheaf</h1>
+    <p style="text-align: center; color: #777;">Last Updated: October 2025</p>
+
+    
+    <div class="lang-section ltr" id="lang-en">
         <h2>English</h2>
         
         <p>We are committed to protecting our users' privacy. This document explains how our application **Sheaf** collects, uses, and protects your information.</p>
@@ -104,9 +117,9 @@
         <h3>2. File Management and Security (Crucial)</h3>
         <ul>
             <li>**Local Processing:** Most operations are performed **entirely locally** on your device.</li>
-            <li>**Server File Deletion:** Files sent to the server are **permanently and immediately deleted after processing is complete and the result is returned to the user.**</li>
+            <li>**Server File Deletion:** Files sent to the server (for tools requiring remote processing) are **permanently and immediately deleted after processing is complete and the result is returned to the user.** We do not retain any copies of processed files.</li>
         </ul>
-
+        
         <h3>3. Advertising Disclaimer</h3>
         <p class="disclaimer">The **Sheaf** application may display third-party advertisements. These ads are served by external platforms. We take no responsibility for the content, actions, or links associated with these third-party ads or their related websites. Clicking on advertisements is at the user's own risk.</p>
         
@@ -114,7 +127,28 @@
         <p>If you have any questions, please contact us via email at **www.mom1374@gmail.com**.</p>
     </div>
 
-    <div class="lang-section ltr">
+    <div class="lang-section rtl" id="lang-fa">
+        <h2>فارسی (Persian)</h2>
+        
+        <p>ما به حفظ حریم خصوصی کاربران خود متعهد هستیم. این سند نحوه جمع‌آوری، استفاده و حفاظت از اطلاعات شما توسط اپلیکیشن **Sheaf** را توضیح می‌دهد.</p>
+
+        <h3>۱. جمع‌آوری اطلاعات شخصی</h3>
+        <p>اپلیکیشن **Sheaf** **هیچ اطلاعات شخصی قابل شناسایی (PII)** از جمله نام، آدرس ایمیل، یا موقعیت جغرافیایی شما را به صورت مستقیم جمع‌آوری، ذخیره یا به سرورهای خارجی ارسال نمی‌کند. ما ممکن است از سرویس‌های شخص ثالث برای جمع‌آوری داده‌های استفاده ناشناس برای بهبود عملکرد استفاده کنیم.</p>
+        
+        <h3>۲. مدیریت و امنیت فایل‌ها (بسیار مهم)</h3>
+        <ul>
+            <li>**پردازش محلی:** بخش اعظم عملیات‌ها **کاملاً به صورت محلی** روی دستگاه شما انجام می‌شود.</li>
+            <li>**حذف فایل‌های سرور:** فایل‌های ارسال‌شده به سرور، **بلافاصله پس از تکمیل فرآیند پردازش و ارسال نتیجه به کاربر، از سرورهای ما حذف می‌شوند.**</li>
+        </ul>
+        
+        <h3>۳. سلب مسئولیت تبلیغات</h3>
+        <p class="disclaimer">اپلیکیشن **Sheaf** ممکن است تبلیغات شخص ثالثی را نمایش دهد. ما هیچ مسئولیتی در قبال محتوا، عملکرد یا اقدامات لینک‌های خارجی مرتبط با این تبلیغات نداریم. کلیک بر روی تبلیغات با مسئولیت خود کاربر است.</p>
+        
+        <h3>۴. تماس با ما</h3>
+        <p>در صورت داشتن هرگونه سؤال، لطفاً از طریق ایمیل **www.mom1374@gmail.com** با ما تماس بگیرید.</p>
+    </div>
+
+    <div class="lang-section ltr" id="lang-fr">
         <h2>Français (French)</h2>
         
         <p>Nous nous engageons à protéger la vie privée de nos utilisateurs. Ce document explique comment notre application **Sheaf** collecte, utilise et protège vos informations.</p>
@@ -129,13 +163,13 @@
         </ul>
 
         <h3>3. Clause de non-responsabilité relative à la publicité</h3>
-        <p class="disclaimer">L'application **Sheaf** peut afficher des publicités de tiers. Nous n'assumons aucune responsabilité quant au contenu, aux actions ou aux liens associés à ces publicités ou aux sites Web tiers associés. Cliquer sur les publicités se fait aux risques et périls de l'utilisateur.</p>
+        <p class="disclaimer">L'application **Sheaf** peut afficher des publicités de tiers. Nous n'assumons aucune responsabilité quant au contenu, aux actions ou aux liens associés à ces publicités. Cliquer sur les publicités se fait aux risques et périls de l'utilisateur.</p>
         
         <h3>4. Nous Contacter</h3>
         <p>Si vous avez des questions, veuillez nous contacter par e-mail à **www.mom1374@gmail.com**.</p>
     </div>
 
-    <div class="lang-section rtl">
+    <div class="lang-section rtl" id="lang-ar">
         <h2>العربية (Arabic)</h2>
         
         <p>نحن ملتزمون بحماية خصوصية مستخدمينا. تشرح هذه الوثيقة كيفية جمع تطبيقنا **Sheaf** لمعلوماتك واستخدامها وحمايتها.</p>
@@ -150,13 +184,13 @@
         </ul>
 
         <h3>3. إخلاء مسؤولية الإعلانات</h3>
-        <p class="disclaimer">قد يعرض تطبيق **Sheaf** إعلانات من أطراف ثالثة. نحن لا نتحمل أي مسؤولية عن محتوى أو إجراءات أو روابط هذه الإعلانات أو مواقع الويب المرتبطة بها. يكون النقر على الإعلانات على مسؤولية المستخدم الخاصة.</p>
+        <p class="disclaimer">قد يعرض تطبيق **Sheaf** إعلانات من أطراف ثالثة. نحن لا نتحمل أي مسؤولية عن محتوى أو إجراءات أو روابط هذه الإعلانات. يكون النقر على الإعلانات على مسؤولية المستخدم الخاصة.</p>
         
         <h3>4. الاتصال بنا</h3>
         <p>إذا كانت لديك أي أسئلة، يرجى الاتصال بنا عبر البريد الإلكتروني على **www.mom1374@gmail.com**.</p>
     </div>
 
-    <div class="lang-section ltr">
+    <div class="lang-section ltr" id="lang-de">
         <h2>Deutsch (German)</h2>
         
         <p>Wir verpflichten uns, die Privatsphäre unserer Nutzer zu schützen. Dieses Dokument erklärt, wie unsere App **Sheaf** Ihre Informationen sammelt, verwendet und schützt.</p>
@@ -171,13 +205,13 @@
         </ul>
 
         <h3>3. Haftungsausschluss für Werbung</h3>
-        <p class="disclaimer">Die **Sheaf** App kann Werbung von Drittanbietern anzeigen. Wir übernehmen keine Verantwortung für den Inhalt, die Handlungen oder die Links, die mit diesen Anzeigen oder deren zugehörigen Websites verbunden sind. Das Klicken auf Werbung erfolgt auf eigenes Risiko des Nutzers.</p>
+        <p class="disclaimer">Die **Sheaf** App kann Werbung von Drittanbietern anzeigen. Wir übernehmen keine Verantwortung für den Inhalt, die Handlungen oder die Links, die mit diesen Anzeigen verbunden sind. Das Klicken auf Werbung erfolgt auf eigenes Risiko des Nutzers.</p>
         
         <h3>4. Kontakt</h3>
         <p>Bei Fragen kontaktieren Sie uns bitte per E-Mail unter **www.mom1374@gmail.com**.</p>
     </div>
 
-    <div class="lang-section ltr">
+    <div class="lang-section ltr" id="lang-ru">
         <h2>Русский (Russian)</h2>
         
         <p>Мы обязуемся защищать конфиденциальность наших пользователей. В этом документе объясняется, как наше приложение **Sheaf** собирает, использует и защищает вашу информацию.</p>
@@ -192,13 +226,13 @@
         </ul>
 
         <h3>3. Отказ от ответственности за рекламу</h3>
-        <p class="disclaimer">Приложение **Sheaf** может отображать стороннюю рекламу. Мы не несем ответственности за содержание, действия или ссылки, связанные с этой рекламой или соответствующими веб-сайтами. Нажатие на рекламу осуществляется на собственный риск пользователя.</p>
+        <p class="disclaimer">Приложение **Sheaf** может отображать стороннюю рекламу. Мы не несем ответственности за содержание, действия или ссылки, связанные с этой рекламой. Нажатие на рекламу осуществляется на собственный риск пользователя.</p>
         
         <h3>4. Свяжитесь с нами</h3>
         <p>Если у вас есть какие-либо вопросы, свяжитесь с нами по электронной почте: **www.mom1374@gmail.com**.</p>
     </div>
 
-    <div class="lang-section ltr">
+    <div class="lang-section ltr" id="lang-zh">
         <h2>中文 (Chinese)</h2>
         
         <p>我们致力于保护用户的隐私。本文档解释了我们的应用程序 **Sheaf** 如何收集、使用和保护您的信息。</p>
@@ -213,13 +247,13 @@
         </ul>
 
         <h3>3. 广告免责声明</h3>
-        <p class="disclaimer">**Sheaf** 应用程序可能会显示第三方广告。我们对与这些广告或相关网站相关的内容、行为或链接不承担任何责任。点击广告的风险由用户自行承担。</p>
+        <p class="disclaimer">**Sheaf** 应用程序可能会显示第三方广告。我们对与这些广告相关的内容、行为或链接不承担任何责任。点击广告的风险由用户自行承担。</p>
         
         <h3>4. 联系我们</h3>
         <p>如果您有任何疑问，请发送邮件至 **www.mom1374@gmail.com** 联系我们。</p>
     </div>
 
-    <div class="lang-section ltr">
+    <div class="lang-section ltr" id="lang-ja">
         <h2>日本語 (Japanese)</h2>
         
         <p>当アプリ **Sheaf** は、ユーザーのプライバシー保護に努めています。本ドキュメントは、当社のアプリケーションがお客様の情報をどのように収集、使用、保護するかを説明します。</p>
@@ -234,13 +268,13 @@
         </ul>
 
         <h3>3. 広告に関する免責事項</h3>
-        <p class="disclaimer">**Sheaf** アプリは、サードパーティの広告を表示する場合があります。当社は、これらの広告や関連ウェブサイトの内容、行為、またはリンクについて一切責任を負いません。広告のクリックは、ユーザー自身の責任で行ってください。</p>
+        <p class="disclaimer">**Sheaf** アプリは、サードパーティの広告を表示する場合があります。当社は、これらの広告のコンテンツ、行為、またはリンクについて一切責任を負いません。広告のクリックは、ユーザー自身の責任で行ってください。</p>
         
         <h3>4. お問い合わせ</h3>
-        <p>ご質問がある場合は、**www.mom1374@gmail.com** までメールでご連絡ください。</p>
+        <p>ご質問がある場合は، **www.mom1374@gmail.com** までメールでご連絡ください。</p>
     </div>
 
-    <div class="lang-section ltr">
+    <div class="lang-section ltr" id="lang-ko">
         <h2>한국어 (Korean)</h2>
         
         <p>저희는 사용자 개인 정보 보호를 위해 최선을 다하고 있습니다. 이 문서는 당사 앱 **Sheaf**이 귀하의 정보를 수집, 사용 및 보호하는 방법을 설명합니다.</p>
@@ -255,13 +289,13 @@
         </ul>
 
         <h3>3. 광고 면책 조항</h3>
-        <p class="disclaimer">**Sheaf** 애플리케이션은 타사 광고를 표시할 수 있습니다. 당사는 이러한 광고 또는 관련 웹사이트의 콘텐츠, 행위 또는 링크에 대해 어떠한 책임도 지지 않습니다. 광고 클릭은 사용자 본인의 책임입니다.</p>
+        <p class="disclaimer">**Sheaf** 애플리케이션은 타사 광고를 표시할 수 있습니다. 당사는 이러한 광고의 콘텐츠, 행위 또는 링크에 대해 어떠한 책임도 지지 않습니다. 광고 클릭은 사용자 본인의 책임입니다.</p>
         
         <h3>4. 문의하기</h3>
-        <p>궁금한 점이 있으시면, **www.mom1374@gmail.com**로 이메일을 통해 문의해 주십시오.</p>
+        <p>궁금한 점이 있으시면، **www.mom1374@gmail.com**로 이메일을 통해 문의해 주십시오.</p>
     </div>
 
-    <div class="lang-section rtl">
+    <div class="lang-section rtl" id="lang-hi">
         <h2>हिन्दी (Hindi)</h2>
         
         <p>हम अपने उपयोगकर्ताओं की गोपनीयता की रक्षा करने के लिए प्रतिबद्ध हैं। यह दस्तावेज़ बताता है कि हमारा एप्लिकेशन **Sheaf** आपकी जानकारी को कैसे एकत्र, उपयोग और सुरक्षित करता है।</p>
@@ -276,15 +310,43 @@
         </ul>
 
         <h3>3. विज्ञापन अस्वीकरण</h3>
-        <p class="disclaimer">**Sheaf** एप्लिकेशन तृतीय-पक्ष विज्ञापन प्रदर्शित कर सकता है। हम इन विज्ञापनों या संबंधित वेबसाइटों की सामग्री, कार्यों या लिंक के लिए कोई जिम्मेदारी नहीं लेते हैं। विज्ञापनों पर क्लिक करना उपयोगकर्ता के अपने जोखिम पर है।</p>
+        <p class="disclaimer">**Sheaf** एप्लिकेशन तृतीय-पक्ष विज्ञापन प्रदर्शित कर सकता है। हम इन विज्ञापनों की सामग्री, कार्यों या लिंक के लिए कोई जिम्मेदारी नहीं लेते हैं। विज्ञापनों पर क्लिक करना उपयोगकर्ता के अपने जोखिम पर है।</p>
         
         <h3>4. हमसे संपर्क करें</h3>
-        <p>यदि आपके कोई प्रश्न हैं, तो कृपया हमें **www.mom1374@gmail.com** पर ईमेल के माध्यम से संपर्क करें।</p>
+        <p>यदि आपके कोई प्रश्न हैं، तो कृपया हमें **www.mom1374@gmail.com** पर ईमेल के माध्यम से संपर्क करें।</p>
     </div>
 
     <div class="footer">
         <p>This policy is governed by the laws of **Hungary**.</p>
     </div>
 
+    <script>
+        // تابعی برای نمایش بخش زبان انتخاب شده و پنهان کردن سایر بخش‌ها
+        function showLanguage(langCode) {
+            // پیدا کردن تمام بخش‌های زبان
+            const sections = document.querySelectorAll('.lang-section');
+            
+            // پنهان کردن همه بخش‌ها
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+            
+            // نمایش بخش انتخاب شده
+            const selectedSection = document.getElementById('lang-' + langCode);
+            if (selectedSection) {
+                selectedSection.style.display = 'block';
+                
+                // تغییر جهت سند اصلی (html) بر اساس زبان
+                const isRTL = (langCode === 'fa' || langCode === 'ar' || langCode === 'hi');
+                document.documentElement.lang = langCode;
+                document.documentElement.dir = isRTL ? 'rtl' : 'ltr';
+            }
+        }
+
+        // نمایش زبان انگلیسی به عنوان پیش‌فرض در هنگام بارگذاری صفحه
+        document.addEventListener('DOMContentLoaded', () => {
+            showLanguage('en'); 
+        });
+    </script>
 </body>
 </html>
