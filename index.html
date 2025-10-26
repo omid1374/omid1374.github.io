@@ -38,7 +38,7 @@
             border: 1px solid #ddd;
             border-radius: 8px;
             background-color: #fff;
-            /* به صورت پیش‌فرض همه پنهان هستند، فقط انگلیسی با JS نشان داده می‌شود */
+            /* به صورت پیش‌فرض همه پنهان هستند */
             display: none; 
         }
         .rtl {
@@ -81,13 +81,13 @@
             border-radius: 5px;
             border: 1px solid #aaa;
             cursor: pointer;
+            min-width: 200px; /* برای جلوگیری از تغییر اندازه شدید */
         }
     </style>
 </head>
 <body>
 
     <div id="language-selector-container">
-        <label for="language-selector" style="font-weight: bold;">Select Language / زبان را انتخاب کنید:</label>
         <select id="language-selector" onchange="showLanguage(this.value)">
             <option value="en">English (Default)</option>
             <option value="fa">فارسی (Persian)</option>
@@ -163,10 +163,10 @@
         </ul>
 
         <h3>3. Clause de non-responsabilité relative à la publicité</h3>
-        <p class="disclaimer">L'application **Sheaf** peut afficher des publicités de tiers. Nous n'assumons aucune responsabilité quant au contenu, aux actions ou aux liens associés à ces publicités. Cliquer sur les publicités se fait aux risques et périls de l'utilisateur.</p>
+        <p class="disclaimer">L'application **Sheaf** peut afficher des publicités de tiers. Nous n'assumons aucune responsabilité quant au contenu، aux actions ou aux liens associés à ces publicités. Cliquer sur les publicités se fait aux risques et périls de l'utilisateur.</p>
         
         <h3>4. Nous Contacter</h3>
-        <p>Si vous avez des questions, veuillez nous contacter par e-mail à **www.mom1374@gmail.com**.</p>
+        <p>Si vous avez des questions، veuillez nous contacter par e-mail à **www.mom1374@gmail.com**.</p>
     </div>
     
     <div class="lang-section rtl" id="lang-ar">
@@ -193,10 +193,10 @@
     <div class="lang-section ltr" id="lang-de">
         <h2>Deutsch (German)</h2>
         
-        <p>Wir verpflichten uns, die Privatsphäre unserer Nutzer zu schützen. Dieses Dokument erklärt, wie unsere App **Sheaf** Ihre Informationen sammelt, verwendet und schützt.</p>
+        <p>Wir verpflichten uns، die Privatsphäre unserer Nutzer zu schützen. Dieses Dokument erklärt، wie unsere App **Sheaf** Ihre Informationen sammelt، verwendet und schützt.</p>
 
         <h3>1. Erfassung persönlicher Daten</h3>
-        <p>Die **Sheaf** App sammelt, speichert oder übermittelt **keine persönlich identifizierbaren Informationen (PII)**. Wir erfassen möglicherweise anonyme Nutzungsdaten von Drittanbietern zur Leistungsverbesserung.</p>
+        <p>Die **Sheaf** App sammelt، speichert oder übermittelt **keine persönlich identifizierbaren Informationen (PII)**. Wir erfassen möglicherweise anonyme Nutzungsdaten von Drittanbietern zur Leistungsverbesserung.</p>
         
         <h3>2. Dateiverwaltung und Sicherheit (Entscheidend)</h3>
         <ul>
@@ -205,7 +205,7 @@
         </ul>
 
         <h3>3. Haftungsausschluss für Werbung</h3>
-        <p class="disclaimer">Die **Sheaf** App kann Werbung von Drittanbietern anzeigen. Wir übernehmen keine Verantwortung für den Inhalt, die Handlungen oder die Links, die mit diesen Anzeigen verbunden sind. Das Klicken auf Werbung erfolgt auf eigenes Risiko des Nutzers.</p>
+        <p class="disclaimer">Die **Sheaf** App kann Werbung von Drittanbietern anzeigen. Wir übernehmen keine Verantwortung für den Inhalt، die Handlungen oder die Links، die mit diesen Anzeigen verbunden sind. Das Klicken auf Werbung erfolgt auf eigenes Risiko des Nutzers.</p>
         
         <h3>4. Kontakt</h3>
         <p>Bei Fragen kontaktieren Sie uns bitte per E-Mail unter **www.mom1374@gmail.com**.</p>
@@ -214,43 +214,43 @@
     <div class="lang-section ltr" id="lang-ru">
         <h2>Русский (Russian)</h2>
         
-        <p>Мы обязуемся защищать конфиденциальность наших пользователей. В этом документе объясняется, как наше приложение **Sheaf** собирает, использует и защищает вашу информацию.</p>
+        <p>Мы обязуемся защищать конфиденциальность наших пользователей. В этом документе объясняется، как наше приложение **Sheaf** собирает، использует и защищает вашу информацию.</p>
 
         <h3>1. Сбор личных данных</h3>
-        <p>Это приложение **Sheaf** **не** собирает, не хранит и не передает **никакой личной идентифицирующей информации (PII)**. Мы можем использовать сторонние сервисы для сбора анонимных данных об использовании.</p>
+        <p>Это приложение **Sheaf** **не** собирает، не хранит и не передает **никакой личной идентифицирующей информации (PII)**. Мы можем использовать сторонние сервисы для сбора анонимных данных об использовании.</p>
         
         <h3>2. Управление файлами и безопасность (Критически важно)</h3>
         <ul>
             <li>**Локальная обработка:** Большинство операций выполняются **полностью локально** на вашем устройстве.</li>
-            <li>**Удаление файлов с сервера:** Файлы, отправленные на сервер, **удаляются безвозвратно и немедленно после завершения обработки и возврата результата пользователю.**</li>
+            <li>**Удаление файлов с сервера:** Файлы، отправленные на сервер، **удаляются безвозвратно и немедленно после завершения обработки و возврата результата пользователю.**</li>
         </ul>
 
         <h3>3. Отказ от ответственности за рекламу</h3>
         <p class="disclaimer">Приложение **Sheaf** может отображать стороннюю рекламу. Мы не несем ответственности за содержание، действия یا ссылки، связанные с этой рекламой. Нажатие на рекламу осуществляется на собственный риск пользователя.</p>
         
         <h3>4. Свяжитесь с нами</h3>
-        <p>Если у вас есть какие-либо вопросы, свяжитесь с нами по электронной почте: **www.mom1374@gmail.com**.</p>
+        <p>Если у вас есть какие-либо вопросы، свяжитесь с нами по электронной почте: **www.mom1374@gmail.com**.</p>
     </div>
 
     <div class="lang-section ltr" id="lang-zh">
         <h2>中文 (Chinese)</h2>
         
-        <p>我们致力于保护用户的隐私。本文档解释了我们的应用程序 **Sheaf** 如何收集، 使用和保护您的信息。</p>
+        <p>我们致力于保护用户的隐私。本文档解释了我们的应用程序 **Sheaf** 如何收集، 使用和保护您的信息.</p>
 
         <h3>1. 个人信息收集</h3>
-        <p>本应用程序 **Sheaf** **不会** 直接收集، 存储或传输任何 **个人身份信息 (PII)**。我们可能会使用第三方服务来收集匿名使用数据以改进性能。</p>
+        <p>本应用程序 **Sheaf** **不会** 直接收集، 存储或传输任何 **个人身份信息 (PII)**. 我们可能会使用第三方服务来收集匿名使用数据以改进性能.</p>
         
         <h3>2. 文件管理和安全 (至关重要)</h3>
         <ul>
-            <li>**本地处理:** 大多数操作都在您的设备上**完全本地**执行。</li>
-            <li>**服务器文件删除:** 发送到服务器的文件会在**处理完成后并将结果返回给用户后، 立即永久删除。**</li>
+            <li>**本地处理:** 大多数操作都在您的设备上**完全本地**执行.</li>
+            <li>**服务器文件删除:** 发送到服务器的文件会在**处理完成后并将结果返回给用户后، 立即永久删除. **</li>
         </ul>
 
         <h3>3. 广告免责声明</h3>
-        <p class="disclaimer">**Sheaf** 应用程序可能会显示第三方广告。我们对与这些广告相关的内容، 行为或链接不承担任何责任。点击广告的风险由用户自行承担。</p>
+        <p class="disclaimer">**Sheaf** 应用程序可能会显示第三方广告. 我们对与这些广告相关的内容، 行为或链接不承担任何责任. 点击广告的风险由用户自行承担.</p>
         
         <h3>4. 联系我们</h3>
-        <p>如果您有任何疑问، 请发送邮件至 **www.mom1374@gmail.com** 联系我们。</p>
+        <p>如果您有任何疑问، 请发送邮件至 **www.mom1374@gmail.com** 联系我们.</p>
     </div>
 
     <div class="lang-section ltr" id="lang-ja">
@@ -298,19 +298,19 @@
     <div class="lang-section rtl" id="lang-hi">
         <h2>हिन्दी (Hindi)</h2>
         
-        <p>हम अपने उपयोगकर्ताओं की गोपनीयता की रक्षा करने के लिए प्रतिबद्ध हैं। यह दस्तावेज़ बताता है कि हमारा एप्लिकेशन **Sheaf** आपकी जानकारी को कैसे एकत्र، उपयोग और सुरक्षित करता है।</p>
+        <p>हम अपने उपयोगकर्ताओं की गोपनीयता की रक्षा करने के लिए प्रतिबद्ध हैं। यह दस्तावेज़ बताता है कि हमारा एप्लिकेशन **Sheaf** आपकी जानकारी को कैसे एकत्र، उपयोग और सुरक्षित करता है.</p>
 
         <h3>1. व्यक्तिगत जानकारी का संग्रह</h3>
-        <p>यह एप्लिकेशन **Sheaf** कोई भी **व्यक्तिगत रूप से पहचान योग्य जानकारी (PII)** सीधे एकत्र، संग्रहीत या प्रसारित **नहीं** करता है। हम प्रदर्शन सुधार के लिए गुमनाम उपयोग डेटा एकत्र कर सकते हैं।</p>
+        <p>यह एप्लिकेशन **Sheaf** कोई भी **व्यक्तिगत रूप से पहचान योग्य जानकारी (PII)** सीधे एकत्र، संग्रहीत या प्रसारित **नहीं** करता है. हम प्रदर्शन सुधार के लिए गुमनाम उपयोग डेटा एकत्र कर सकते हैं.</p>
         
         <h3>2. फ़ाइल प्रबंधन और सुरक्षा (महत्वपूर्ण)</h3>
         <ul>
-            <li>**स्थानीय प्रसंस्करण:** अधिकांश ऑपरेशन आपके डिवाइस पर **पूरी तरह से स्थानीय रूप से** किए जाते हैं.</li>
+            <li>**स्थानीय प्रसंस्करण:** अधिकांश ऑपरेशन आपके डिवाइस पर **पूरी तरह से स्थानीय रूप से** किए जाते.</li>
             <li>**सर्वर फ़ाइल हटाना:** सर्वर पर भेजी गई फ़ाइलें **प्रसंस्करण पूरा होने और परिणाम उपयोगकर्ता को वापस किए जाने के तुरंत बाद स्थायी रूप से हटा दी जाती हैं.**</li>
         </ul>
 
         <h3>3. विज्ञापन अस्वीकरण</h3>
-        <p class="disclaimer">**Sheaf** एप्लिकेशन तृतीय-पक्ष विज्ञापन प्रदर्शित कर सकता है। हम इन विज्ञापनों की सामग्री، कार्यों या लिंक के लिए कोई जिम्मेदारी नहीं लेते हैं। विज्ञापनों पर क्लिक करना उपयोगकर्ता के अपने जोखिम पर है.</p>
+        <p class="disclaimer">**Sheaf** एप्लिकेशन तृतीय-पक्ष विज्ञापन प्रदर्शित कर सकता है. हम इन विज्ञापनों की सामग्री، कार्यों या लिंक के लिए कोई जिम्मेदारी नहीं लेते हैं. विज्ञापनों पर क्लिक करना उपयोगकर्ता के अपने जोखिम पर है.</p>
         
         <h3>4. हमसे संपर्क करें</h3>
         <p>यदि आपके कोई प्रश्न हैं، तो कृपया हमें **www.mom1374@gmail.com** पर ईमेल के माध्यम से संपर्क करें.</p>
@@ -321,32 +321,55 @@
     </div>
 
     <script>
-        // تابعی برای نمایش بخش زبان انتخاب شده و پنهان کردن سایر بخش‌ها
+        // لیست کدهای زبان موجود در سند
+        const AVAILABLE_LANGS = ['en', 'fa', 'fr', 'ar', 'de', 'ru', 'zh', 'ja', 'ko', 'hi'];
+
+        // تابعی برای نمایش بخش زبان انتخاب شده
         function showLanguage(langCode) {
-            // پیدا کردن تمام بخش‌های زبان
+            // پیدا کردن تمام بخش‌های زبان و پنهان کردن همه
             const sections = document.querySelectorAll('.lang-section');
-            
-            // پنهان کردن همه بخش‌ها
             sections.forEach(section => {
                 section.style.display = 'none';
             });
             
             // نمایش بخش انتخاب شده
             const selectedSection = document.getElementById('lang-' + langCode);
+            const selector = document.getElementById('language-selector');
+
             if (selectedSection) {
                 selectedSection.style.display = 'block';
                 
-                // تغییر جهت سند اصلی (html) بر اساس زبان
+                // تغییر جهت سند اصلی (html) و به‌روزرسانی selector
                 const isRTL = (langCode === 'fa' || langCode === 'ar' || langCode === 'hi');
                 document.documentElement.lang = langCode;
                 document.documentElement.dir = isRTL ? 'rtl' : 'ltr';
+                selector.value = langCode; // به‌روزرسانی منوی کشویی
             }
         }
 
-        // نمایش زبان انگلیسی به عنوان پیش‌فرض در هنگام بارگذاری صفحه
-        document.addEventListener('DOMContentLoaded', () => {
-            showLanguage('en'); 
-        });
+        // تابع تشخیص خودکار زبان دستگاه
+        function detectAndShowLanguage() {
+            let preferredLang = 'en'; // زبان پیش‌فرض
+
+            // ۱. بررسی navigator.languages (برای مرورگرهای مدرن)
+            const browserLangs = navigator.languages || [navigator.language];
+            
+            for (const browserLang of browserLangs) {
+                // استخراج کد اصلی زبان (مانند 'en' از 'en-US')
+                const baseLang = browserLang.split('-')[0]; 
+                
+                if (AVAILABLE_LANGS.includes(baseLang)) {
+                    preferredLang = baseLang;
+                    break;
+                }
+            }
+            
+            // ۲. نمایش زبان تشخیص داده شده (یا پیش‌فرض)
+            showLanguage(preferredLang);
+        }
+
+        // اجرای تشخیص زبان پس از بارگذاری کامل صفحه
+        document.addEventListener('DOMContentLoaded', detectAndShowLanguage);
     </script>
 </body>
 </html>
